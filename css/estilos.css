@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript.otf');
+}
+header{
+  background-color:#5b7989;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+header h1{
+  text-align: left;
+  color: white;
+  font-family: DancingScript;
+  text-shadow: 2px 0px 0px #02010a;
+  flex-grow: 3;
+}
+
+header nav{
+  font-size: 20px;
+  text-align: right;
+  color: white;
+  font-family: DancingScript;
+  text-decoration: none;
+}
+
+header a:hover{
+   text-decoration: underline;
+   color: white;
+ }
+.navegador{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 900px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  header nav{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
