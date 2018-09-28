@@ -44,6 +44,20 @@ header a:hover{
   text-decoration: none;
 }
 
+.principal{
+  background-color: #82c3a6;
+  text-align: center;
+  height: 35%;
+  width: 100%;
+}
+
+.principal img{
+  text-align: center;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 900px){
   header{
     flex-direction: column;
