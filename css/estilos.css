@@ -107,8 +107,6 @@ footer div{
   width: 25%;
 }
 
-
-
 @media (max-width: 900px){
   header{
     flex-direction: column;
