@@ -9,6 +9,18 @@ body{
   font-family: DancingScript;
 }
 
+@keyframes slidein{
+ 0%{
+  margin-top: 150%;
+ }
+ 60%{
+   margin-left: -5%;
+ }
+ 100%{
+   margin-top: 0%;
+ }
+}
+
 header{
   background-color:#5b7989;
   border-radius: 10px 10px 0px 0px;
@@ -16,6 +28,8 @@ header{
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  animation-name: slidein;
+  animation-duration: 3s;
 }
 
 header h1{
@@ -32,10 +46,11 @@ header nav{
   color: white;
   font-family: DancingScript;
   text-decoration: none;
+  word-spacing: 5px;
 }
 
 header a:hover{
-   text-decoration: underline;
+   text-decoration: none;
    color: white;
  }
 
@@ -44,33 +59,38 @@ header a:hover{
   text-decoration: none;
 }
 
-.principal{
-  background-color: #82c3a6;
-  text-align: center;
-  height: 35%;
+section{
+  display: flex;
+  flex-wrap: wrap;
+  height: 55%;
   width: 100%;
+}
+.principal{
+  text-align: center;
+  background-color: #82c3a6;
+  width: 100%;
+  height: 30%
 }
 
 .principal img{
-  text-align: center;
-  margin-top: 20px;
-  height: 100%;
   width: 100%;
 }
 
 .secundaria{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  background-color:  #d5c75f;
+  background-color: #d5c75f;
   border: 1px;
+  width: 50%;
   height: 25%;
-  width: 100%;
 }
 
 .secundaria figure{
   text-align: center;
-  width: 50%;
-  text-decoration: underline;
+  align-items: center;
+  width: 100%;
+  height: 25%;
 }
 
 .secundaria img{
@@ -121,19 +141,11 @@ footer div{
     text-align: center;
     justify-content: center;
   }
+
   .secundaria{
-    flex-direction: column;
-    width: 100%;
-    height: 35%;
-  }
-  .secundaria figure{
-    text-align: center;
-    justify-content: center;
-    width: 89%;
-  }
-  .secundaria img{
     width: 100%;
   }
+
   footer{
     flex-direction: column;
   }
